@@ -196,3 +196,8 @@ color green, gatekeeper
 
 zoom gatekeeper
 ```
+
+---
+
+➡️ **Prochaine étape :**  
+[TP 2 — Domaines structuraux de la kinase ABL](tp2_fixation_ATP.md)
