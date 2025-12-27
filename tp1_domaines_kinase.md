@@ -67,4 +67,69 @@ color slate, polymer
 
 ---
 
-##
+## 🧠 Organisation générale du domaine kinase
+
+### 🔹 Le domaine kinase est structuré en :
+- Lobe N-terminal → fixation de l’ATP
+- Lobe C-terminal → catalyse et interaction avec le substrat
+
+---
+
+### 🔹 Domaines et motifs structuraux à identifier
+1️⃣ La charnière (hinge)
+
+- Relie les lobes N et C
+- Permet la fixation de l’adénine de l’ATP
+- Cible majeure des inhibiteurs de kinases
+
+👉 Sans interaction avec la charnière → pas d’activité kinase.
+
+(Elle sera étudiée plus en détail lors de la fixation de l’ATP et de l’imatinib.)
+
+2️⃣ La boucle P (P-loop ou glycine-rich loop)
+
+Rôle biologique
+
+Stabilise les groupes phosphates de l’ATP
+
+Apporte de la flexibilité au site catalytique
+
+Riche en résidus glycine
+
+👉 Essentielle au bon positionnement de l’ATP.
+
+3️⃣ Le motif DFG (Asp-Phe-Gly)
+
+Rôle biologique
+
+Contrôle l’état actif ou inactif de la kinase
+
+L’aspartate (D) coordonne le Mg²⁺ nécessaire à la catalyse
+
+Conformations
+
+DFG-in → compatible avec l’activité
+
+DFG-out → kinase inactive
+
+4️⃣ L’hélice αC
+
+Rôle biologique
+
+Positionne les résidus catalytiques
+
+Formation d’un pont salin indispensable à l’activité
+
+Conformations
+
+αC-in → kinase active
+
+αC-out → kinase inactive
+
+5️⃣ La boucle d’activation (A-loop)
+
+Rôle biologique
+
+Régule l’accès du substrat au site catalytique
+
+Peut bloquer partiellement le site actif en conformation inactive
