@@ -153,7 +153,7 @@ zoom DFG
 
 👉 Conformations
 
-#### - αC-in : kinase ACTIVE ✅
+#### αC-in : kinase ACTIVE ✅
 
 - L’hélice αC est orientée vers le site actif
 - La glutamate (αC) se rapproche de la lysine catalytique
@@ -165,7 +165,7 @@ Conséquences :
 
 👉 La catalyse devient possible
 
-#### - αC-out → kinase inactive ❌
+#### αC-out → kinase inactive ❌
 
 - L’hélice αC bascule vers l’extérieur
 - La glutamate s’éloigne de la lysine
@@ -177,10 +177,22 @@ Conséquences :
 
 👉 La kinase est inactive, même si le site ATP n’est pas complètement bloqué.
 
-5️⃣ La boucle d’activation (A-loop)
+5️⃣ Le résidu gatekeeper (Thr315)
 
-Rôle biologique
+- Contrôle l’accès à une poche hydrophobe adjacente
+- Déterminant pour la fixation des inhibiteurs
 
-Régule l’accès du substrat au site catalytique
+Dans la console Pymol :
+```pml
+remove solvent
+remove not chain A
+hide everything
+show cartoon, polymer
+color slate, polymer
 
-Peut bloquer partiellement le site actif en conformation inactive
+select gatekeeper, resi 315
+show sticks, gatekeeper
+color green, gatekeeper
+
+zoom gatekeeper
+```
