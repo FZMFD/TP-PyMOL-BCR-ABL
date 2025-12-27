@@ -56,52 +56,26 @@ Dans la console PyMOL :
 reinitialize
 fetch 2G1T, async=0
 remove solvent
-```
 
----
+hide everything
+show cartoon, polymer
+color slate, polymer
 
-Garder uniquement la chaîne A
+# 1) Afficher TOUS les ligands (HETATM)
+select ligands, hetatm
+show sticks, ligands
+color yellow, ligands
+zoom ligands, 12
 
-```pml
-remove not chain A
-```
-
----
-
-#### 2️⃣ Affichage propre de la protéine
-
-```pml
-de everything
-show cartoon, chain A
-color slate, chain A
-```
-
---- 
-
-#### 3️⃣ Identifier et afficher la charnière (hinge)
-
-Pour ABL, la charnière correspond classiquement aux résidus 312–318
-(adapté à 2G1T – zone de liaison de l’adénine)
-
-```pml
 select hinge, chain A and resi 312-318
 show sticks, hinge
-color yellow, hinge
-label hinge and name CA, "hinge"
-```
+color green, hinge
 
----
-
-#### 4️⃣ Identifier et afficher le motif DFG
-
-Dans ABL, le motif DFG est 381–383.
-
-```pml
 select DFG, chain A and resi 381-383
 show sticks, DFG
 color red, DFG
-label DFG and name CA, "DFG"
 ```
 
 ---
+
 
