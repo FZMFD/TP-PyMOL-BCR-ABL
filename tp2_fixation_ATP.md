@@ -1,0 +1,55 @@
+# TP 2 — Fixation de l’ATP dans le domaine kinase d’ABL
+## Visualisation du site catalytique et des interactions ATP–kinase avec PyMOL
+
+---
+
+## 🎯 Objectif du TP
+
+L’objectif de ce TP est de **visualiser le site de fixation de l’ATP** dans le domaine kinase d’ABL et de comprendre :
+
+- comment l’ATP se positionne entre les deux lobes de la kinase,
+- quels **domaines structuraux** participent à sa fixation,
+- pourquoi la fixation correcte de l’ATP est indispensable à l’activité enzymatique.
+
+Cette étape est essentielle pour comprendre ensuite **comment les inhibiteurs de kinases bloquent ce site**.
+
+---
+
+## 🧬 Rappel biologique (essentiel)
+
+Les protéines kinases catalysent le transfert d’un groupement phosphate (γ-phosphate) de l’ATP vers une protéine substrat.
+
+Pour cela :
+- l’ATP doit être **correctement positionné** dans le site catalytique,
+- plusieurs **résidus conservés** assurent sa reconnaissance,
+- le complexe **ATP–Mg²⁺** est indispensable à la réaction.
+
+👉 Toute perturbation de la fixation de l’ATP empêche la phosphorylation.
+
+---
+
+## 📁 Fichiers PDB utilisés
+
+Deux structures sont utilisées pour comparer :
+
+### 🔹 Structure sans ATP (référence)
+- **PDB : 2HYY**
+- Domaine kinase d’ABL
+- Complexé avec imatinib (ATP absent)
+
+### 🔹 Structure avec ATP
+- **PDB : 1IEP**
+- Domaine kinase d’ABL
+- Complexé avec **ATP**
+
+👉 La comparaison permet de localiser précisément le site ATP.
+
+---
+
+## 🧰 Manipulation PyMOL — Chargement des structures
+
+### 1️⃣ Charger les deux structures
+```pml
+fetch 2HYY, async=0
+fetch 1IEP, async=0
+remove solvent
