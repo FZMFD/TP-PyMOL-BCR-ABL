@@ -70,25 +70,30 @@ remove not chain A
 
 #### 2️⃣ Affichage propre de la protéine
 
-```
-
-
+```pml
 de everything
 show cartoon, chain A
 color slate, chain A
+```
 
-3️⃣ Identifier et afficher la charnière (hinge)
+--- 
+
+#### 3️⃣ Identifier et afficher la charnière (hinge)
 
 Pour ABL, la charnière correspond classiquement aux résidus 312–318
 (adapté à 2G1T – zone de liaison de l’adénine)
 
+```pml
 select hinge, chain A and resi 312-318
 show sticks, hinge
 color yellow, hinge
 label hinge and name CA, "hinge"
 
 
-👉 Rôle à expliquer : fixation de l’adénine de l’ATP / des inhibiteurs.
+
+```
+
+---
 
 4️⃣ Identifier et afficher le motif DFG
 
