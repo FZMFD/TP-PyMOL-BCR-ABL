@@ -38,7 +38,7 @@ Deux structures sont utilisées pour comparer :
 - Complexé avec imatinib (ATP absent)
 
 ### 🔹 Structure avec ATP
-- **PDB : 1IEP** (https://www.rcsb.org/structure/1IEP)
+- **PDB : 2G1T** (https://www.rcsb.org/structure/2G1T)
 - Domaine kinase d’ABL
 - Complexé avec **ATP**
 
@@ -48,8 +48,64 @@ Deux structures sont utilisées pour comparer :
 
 ## 🧰 Manipulation PyMOL — Chargement des structures
 
-### 1️⃣ Charger les deux structures
-```pml
-fetch 2HYY, async=0
-fetch 1IEP, async=0
+#### 1️⃣ Charger 2G1T et ne garder que la chaîne A
+
+reinitialize
+fetch 2G1T, async=0
 remove solvent
+
+
+
+# Garder uniquement la chaîne A
+remove not chain A
+
+2️⃣ Affichage propre de la protéine
+hide everything
+show cartoon, chain A
+color slate, chain A
+
+3️⃣ Identifier et afficher la charnière (hinge)
+
+Pour ABL, la charnière correspond classiquement aux résidus 312–318
+(adapté à 2G1T – zone de liaison de l’adénine)
+
+select hinge, chain A and resi 312-318
+show sticks, hinge
+color yellow, hinge
+label hinge and name CA, "hinge"
+
+
+👉 Rôle à expliquer : fixation de l’adénine de l’ATP / des inhibiteurs.
+
+4️⃣ Identifier et afficher le motif DFG
+
+Dans ABL, le motif DFG est 381–383.
+
+select DFG, chain A and resi 381-383
+show sticks, DFG
+color red, DFG
+label DFG and name CA, "DFG"
+
+
+👉 Rôle à expliquer :
+
+D (Asp) : coordination Mg²⁺
+
+Position du DFG → état actif / inactif
+
+5️⃣ (Option pédagogique) Montrer le nucléotide s’il existe
+
+⚠️ Sans supposer son nom
+
+select ligands, chain A and hetatm
+show sticks, ligands
+color orange, ligands
+zoom (hinge or DFG or ligands), 12
+
+
+👉 S’il n’y a pas de nucléotide visible, ce n’est pas une erreur :
+
+on localise quand même le site ATP grâce à la charnière + DFG
+
+---
+
