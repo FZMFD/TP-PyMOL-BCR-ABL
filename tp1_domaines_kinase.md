@@ -153,8 +153,29 @@ zoom DFG
 
 👉 Conformations
 
-- αC-in → kinase active
-- αC-out → kinase inactive
+#### - αC-in : kinase ACTIVE ✅
+
+- L’hélice αC est orientée vers le site actif
+- La glutamate (αC) se rapproche de la lysine catalytique
+- Il se forme un pont salin Glu⁻ – Lys⁺
+Conséquences :
+- La lysine est verrouillée dans la bonne position
+- L’ATP est correctement orienté
+- Le phosphate γ peut être transféré vers le substrat
+
+👉 La catalyse devient possible
+
+#### - αC-out → kinase inactive ❌
+
+- L’hélice αC bascule vers l’extérieur
+- La glutamate s’éloigne de la lysine
+- Le pont salin est rompu
+Conséquences :
+- La lysine est mal positionnée
+- L’ATP peut parfois entrer mais il est mal aligné
+- pas de transfert de phosphate
+
+👉 La kinase est inactive, même si le site ATP n’est pas complètement bloqué.
 
 5️⃣ La boucle d’activation (A-loop)
 
