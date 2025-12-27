@@ -33,7 +33,7 @@ Son **domaine kinase** :
 ## 📁 Fichier PDB utilisé
 
 ### Structure de référence
-- **PDB : 2HYY**
+- **PDB : 2HYY** `https://www.rcsb.org/structure/2HYY`
 - Domaine kinase d’ABL
 - Complexé avec l’inhibiteur **imatinib**
 
@@ -84,47 +84,77 @@ color slate, polymer
 
 👉 Sans interaction avec la charnière → pas d’activité kinase.
 
-(Elle sera étudiée plus en détail lors de la fixation de l’ATP et de l’imatinib.)
+Dans la console PyMOL :
 
-2️⃣ La boucle P (P-loop ou glycine-rich loop)
+```pml
+remove solvent
+remove not chain A
+hide everything
+show cartoon, polymer
+color slate, polymer
 
-Rôle biologique
+select hinge, resi 315-320
+show sticks, hinge
+color orange, hinge
+zoom hinge
+```
 
-Stabilise les groupes phosphates de l’ATP
+#### 2️⃣ La boucle P (P-loop ou glycine-rich loop)
 
-Apporte de la flexibilité au site catalytique
-
-Riche en résidus glycine
+- Stabilise les groupes phosphates de l’ATP
+- Apporte de la flexibilité au site catalytique
+- Riche en résidus glycine
 
 👉 Essentielle au bon positionnement de l’ATP.
 
-3️⃣ Le motif DFG (Asp-Phe-Gly)
+Dans la console PyMOL :
 
-Rôle biologique
+```pml
+remove solvent
+remove not chain A
+hide everything
+show cartoon, polymer
+color slate, polymer
 
-Contrôle l’état actif ou inactif de la kinase
+select P_loop, resi 248-255
+show sticks, P_loop
+color magenta, P_loop
+zoom P_loop
+```
 
-L’aspartate (D) coordonne le Mg²⁺ nécessaire à la catalyse
+#### 3️⃣ Le motif DFG (Asp-Phe-Gly)
 
-Conformations
+- Contrôle l’état actif ou inactif de la kinase
+- L’aspartate (D) coordonne le Mg²⁺ nécessaire à la catalyse
 
-DFG-in → compatible avec l’activité
+👉 Conformations
 
-DFG-out → kinase inactive
+- DFG-in → compatible avec l’activité
+- DFG-out → kinase inactive
 
+Dans la console PyMOL :
+
+```pml
+remove solvent
+remove not chain A
+hide everything
+show cartoon, polymer
+color slate, polymer
+
+select DFG, resi 381-383
+show sticks, DFG
+color red, DFG
+zoom DFG
+```
 4️⃣ L’hélice αC
 
-Rôle biologique
+- Positionne les résidus catalytiques
+- Formation d’un pont salin indispensable à l’activité
 
-Positionne les résidus catalytiques
+👉 Conformations
 
-Formation d’un pont salin indispensable à l’activité
-
-Conformations
-
-αC-in → kinase active
-
-αC-out → kinase inactive
+- αC-in → kinase active
+- αC-out → kinase inactive
 
 5️⃣ La boucle d’activation (A-loop)
 
