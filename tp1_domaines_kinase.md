@@ -33,7 +33,7 @@ Son **domaine kinase** :
 ## 📁 Fichier PDB utilisé
 
 ### Structure de référence
-- **PDB : 2HYY** `https://www.rcsb.org/structure/2HYY`
+- **PDB : 2HYY** (https://www.rcsb.org/structure/2HYY)
 - Domaine kinase d’ABL
 - Complexé avec l’inhibiteur **imatinib**
 
