@@ -107,3 +107,5 @@ Chaque partie comprend :
 
 ➡️ **Commencer le TP :**  
 [TP 1 — Domaines structuraux de la kinase ABL](tp1_domaines_kinase.md)
+
+Pr. Fatima Zahra MOUFID, dr.moufidfz@gmail.com
