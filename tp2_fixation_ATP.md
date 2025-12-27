@@ -67,9 +67,10 @@ show sticks, ligands
 color yellow, ligands
 zoom ligands, 12
 
-select hinge, chain A and resi 312-318
+select hinge, resi 315-320
 show sticks, hinge
-color green, hinge
+color orange, hinge
+zoom hinge
 
 select DFG, chain A and resi 381-383
 show sticks, DFG
