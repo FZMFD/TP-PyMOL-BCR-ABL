@@ -77,10 +77,9 @@ Ce TP est organisé en plusieurs parties progressives permettant de :
 Le TP est structuré en plusieurs pages, accessibles depuis ce site :
 
 - **TP 1 — Domaines structuraux de la kinase ABL**
-- **TP 2 — Conformations DFG et hélice αC**
-- **TP 3 — Fixation de l’ATP**
-- **TP 4 — Interaction de l’imatinib avec ABL**
-- **TP 5 — Mutation T315I et résistance à l’imatinib**
+- **TP 2 — Fixation de l’ATP**
+- **TP 3 — Interaction de l’imatinib avec ABL**
+- **TP 4 — Mutation T315I et résistance à l’imatinib**
 
 Chaque partie comprend :
 - un rappel théorique bref,
