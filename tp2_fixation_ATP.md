@@ -50,17 +50,30 @@ Deux structures sont utilisées pour comparer :
 
 #### 1️⃣ Charger 2G1T et ne garder que la chaîne A
 
+Dans la console PyMOL :
+
+```pml
 reinitialize
 fetch 2G1T, async=0
 remove solvent
+```
 
-
+---
 
 # Garder uniquement la chaîne A
-remove not chain A
 
-2️⃣ Affichage propre de la protéine
-hide everything
+```pml
+remove not chain A
+```
+
+---
+
+#### 2️⃣ Affichage propre de la protéine
+
+```
+
+
+de everything
 show cartoon, chain A
 color slate, chain A
 
