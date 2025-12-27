@@ -76,7 +76,7 @@ color slate, polymer
 ---
 
 ### 🔹 Domaines et motifs structuraux à identifier
-# 1️⃣ La charnière (hinge)
+#### 1️⃣ La charnière (hinge)
 
 - Relie les lobes N et C
 - Permet la fixation de l’adénine de l’ATP
