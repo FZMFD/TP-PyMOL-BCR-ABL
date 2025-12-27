@@ -60,7 +60,7 @@ remove solvent
 
 ---
 
-# Garder uniquement la chaîne A
+Garder uniquement la chaîne A
 
 ```pml
 remove not chain A
@@ -88,42 +88,20 @@ select hinge, chain A and resi 312-318
 show sticks, hinge
 color yellow, hinge
 label hinge and name CA, "hinge"
-
-
-
 ```
 
 ---
 
-4️⃣ Identifier et afficher le motif DFG
+#### 4️⃣ Identifier et afficher le motif DFG
 
 Dans ABL, le motif DFG est 381–383.
 
+```pml
 select DFG, chain A and resi 381-383
 show sticks, DFG
 color red, DFG
 label DFG and name CA, "DFG"
-
-
-👉 Rôle à expliquer :
-
-D (Asp) : coordination Mg²⁺
-
-Position du DFG → état actif / inactif
-
-5️⃣ (Option pédagogique) Montrer le nucléotide s’il existe
-
-⚠️ Sans supposer son nom
-
-select ligands, chain A and hetatm
-show sticks, ligands
-color orange, ligands
-zoom (hinge or DFG or ligands), 12
-
-
-👉 S’il n’y a pas de nucléotide visible, ce n’est pas une erreur :
-
-on localise quand même le site ATP grâce à la charnière + DFG
+```
 
 ---
 
