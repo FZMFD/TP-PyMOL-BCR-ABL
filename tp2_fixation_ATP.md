@@ -33,12 +33,12 @@ Pour cela :
 Deux structures sont utilisées pour comparer :
 
 ### 🔹 Structure sans ATP (référence)
-- **PDB : 2HYY**
+- **PDB : 2HYY** (https://www.rcsb.org/structure/2HYY)
 - Domaine kinase d’ABL
 - Complexé avec imatinib (ATP absent)
 
 ### 🔹 Structure avec ATP
-- **PDB : 1IEP**
+- **PDB : 1IEP** (https://www.rcsb.org/structure/1IEP)
 - Domaine kinase d’ABL
 - Complexé avec **ATP**
 
