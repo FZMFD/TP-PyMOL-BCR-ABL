@@ -79,4 +79,5 @@ color red, DFG
 
 ---
 
-
+➡️ **Prochaine étape :**  
+[TP 3 — Interaction de l’imatinib avec la kinase ABL](tp3_interaction_imatinib_ABL.md)
