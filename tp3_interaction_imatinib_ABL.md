@@ -105,4 +105,7 @@ show sticks, pocket
 color cyan, pocket
 ```
 
+➡️ **Prochaine étape :**  
+[TP 4 — Effet de la mutation T315I sur la fixation de l’imatinib](tp4_mutation_T315I_imatinib.md)
+
 👉 Cette poche n’existe que lorsque la kinase est inactive
