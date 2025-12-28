@@ -106,5 +106,9 @@ Chaque partie comprend :
 
 ➡️ **Commencer le TP :**  
 [TP 1 — Domaines structuraux de la kinase ABL](tp1_domaines_kinase.md)
+[TP 2 — Domaines structuraux de la kinase ABL](tp2_fixation_ATP.md)
+[TP 3 — Interaction de l’imatinib avec la kinase ABL](tp3_interaction_imatinib_ABL.md)
+[TP 4 — Effet de la mutation T315I sur la fixation de l’imatinib](tp4_mutation_T315I_imatinib.md)
+
 
 Pr. Fatima Zahra MOUFID, dr.moufidfz@gmail.com
