@@ -165,7 +165,27 @@ Conséquences :
 
 👉 La catalyse devient possible
 
-#### αC-out → kinase inactive ❌
+```pml
+fetch 1OPL, async=0
+remove solvent
+remove not chain A
+
+select alphaC, chain A and resi 278-290
+show cartoon, alphaC
+color orange, alphaC
+
+select Lys_cat, chain A and resi 271
+show sticks, Lys_cat
+color red, Lys_cat
+label Lys_cat and name CA, "K271"
+
+select Glu_alphaC, chain A and resi 286
+show sticks, Glu_alphaC
+color blue, Glu_alphaC
+label Glu_alphaC and name CA, "E286"
+```
+
+### αC-out → kinase inactive ❌
 
 - L’hélice αC bascule vers l’extérieur
 - La glutamate s’éloigne de la lysine
@@ -176,6 +196,22 @@ Conséquences :
 - pas de transfert de phosphate
 
 👉 La kinase est inactive, même si le site ATP n’est pas complètement bloqué.
+
+```pml
+select alphaC, chain A and resi 278-290
+show cartoon, alphaC
+color orange, alphaC
+
+select Lys_cat, chain A and resi 271
+show sticks, Lys_cat
+color red, Lys_cat
+label Lys_cat and name CA, "K271"
+
+select Glu_alphaC, chain A and resi 286
+show sticks, Glu_alphaC
+color blue, Glu_alphaC
+label Glu_alphaC and name CA, "E286"
+```
 
 5️⃣ Le résidu gatekeeper (Thr315)
 
